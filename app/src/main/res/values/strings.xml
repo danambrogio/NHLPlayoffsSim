@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Playoffs Simulator</string>
+    <string name="action_settings">Settings</string>
+    <string name="year">2015</string>
+    <string name="developer">Dan Ambrogio</string>
+
+    <!-- Team names -->
+    <string-array name="teamnames">
+        <item>Select a team...</item>
+        <item>Anaheim Ducks</item>
+        <item>Arizona Coyotes</item>
+        <item>Boston Bruins</item>
+        <item>Buffalo Sabres</item>
+        <item>Calgary Flames</item>
+        <item>Carolina Hurricanes</item>
+        <item>Chicago Blackhawks</item>
+        <item>Colorado Avalanche</item>
+        <item>Columbus Blue Jackets</item>
+        <item>Dallas Stars</item>
+        <item>Detroit Red Wings</item>
+        <item>Edmonton Oilers</item>
+        <item>Florida Panthers</item>
+        <item>Los Angeles Kings</item>
+        <item>Minnesota Wild</item>
+        <item>Montreal Canadiens</item>
+        <item>Nashville Predators</item>
+        <item>New Jersey Devils</item>
+        <item>New York Islanders</item>
+        <item>New York Rangers</item>
+        <item>Ottawa Senators</item>
+        <item>Philadelphia Flyers</item>
+        <item>Pittsburgh Penguins</item>
+        <item>Saint Louis Blues</item>
+        <item>San Jose Sharks</item>
+        <item>Tampa Bay Lightning</item>
+        <item>Toronto Maple Leafs</item>
+        <item>Vancouver Canucks</item>
+        <item>Washington Capitals</item>
+        <item>Winnipeg Jets</item>
+    </string-array>
+
+    <!-- Main Screen Buttons -->
+    <string name="editTeam">Edit Teams</string>
+    <string name="runSim">Run Simulation</string>
+    <string name="stats">Statistics</string>
+
+    <!-- Edit Screen Buttons -->
+    <string name="editTitle">Edit a Team</string>
+    <string name="save">Save</string>
+    <string name="cancel">Home</string>
+    <string name="teamStats">Regular Season Record</string>
+    <string name="wins">Wins</string>
+    <string name="losses">Losses</string>
+    <string name="otl">OTL</string>
+    <string name="points">Pts</string>
+    <string name="title_activity_edit_team">Edit a Team</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_select_team">SelectTeam</string>
+
+    <!-- Select Screen Strings -->
+    <string name="selectTitle">Select Teams</string>
+    <string name="go">Go!</string>
+    <string name="title_activity_show_stats">Playoffs Sim</string>
+
+    <!-- Stats Screen Strings -->
+    <string name="statsTitle">Statistics</string>
+    <string name="title_activity_run_simulation">RunSimulation</string>
+
+    <!-- Sim Screen Strings -->
+    <string name="simTitle">Results</string>
+    <string name="done">Done</string>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectTitle"
+        android:id="@+id/textView11"
+        android:textColor="@color/font"
+        android:textStyle="bold|italic"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/selectScrollView"
+            android:layout_weight="1"
+            android:layout_margin="15dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/16"
+                android:id="@+id/textNumChecked"
+                android:textColor="@color/red"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/go"
+                android:id="@+id/btnGo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:height="70dp"
+                android:width="120dp"
+                android:enabled="false"
+                android:onClick="onClickGo" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:id="@+id/btnBack"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:onClick="onClickBack" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMenu"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/playoffs_logo" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editTeam"
+                android:id="@+id/menuBtnEdit"
+                android:layout_marginRight="40dp"
+                android:width="180dp"
+                android:height="60dp"
+                android:onClick="editTeamOnClick" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/runSim"
+                android:id="@+id/menuBtnSim"
+                android:layout_marginLeft="40dp"
+                android:width="180dp"
+                android:height="60dp"
+                android:onClick="runSimOnClick" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stats"
+            android:id="@+id/menuBtnStats"
+            android:width="150dp"
+            android:height="60dp"
+            android:nestedScrollingEnabled="false"
+            android:onClick="showStatsOnClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:id="@+id/appNotes"
+        android:layout_alignParentBottom="true"
+        android:background="#ff2e0031"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView android:text="@string/year" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/year"
+            android:textColor="@color/font"
+            android:gravity="left"
+            android:width="90dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/winnerTextView"
+            android:textColor="@color/winnerfont"
+            android:gravity="center_horizontal"
+            android:text="Last Winner: [teamname]"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/developer"
+            android:id="@+id/devName"
+            android:textColor="@color/font"
+            android:gravity="right"
+            android:width="90dp" />
+    </LinearLayout>
+
+</RelativeLayout>
